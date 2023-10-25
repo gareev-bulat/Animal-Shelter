@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <header class="back_title mb-4"><h2>Выбери друга</h2></header>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        {% for pet in pets %}
+        <div class="col-md-4">
+            <a href="{% url 'pet_detail' pet.pk %}">
+                <div class="card mb-4 box-shadow" style="height: 300px;">
+                    <img class="card-img-top" src="{{ pet.photo.url }}"
+                        alt="{{ pet.name }}"
+                        style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ pet.name }}</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% if forloop.counter|divisibleby:3 %}
+        <div class="w-100"></div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

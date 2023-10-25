@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build:
+      context: ./animal_shelter
+      dockerfile: Dockerfile
+    ports:
+      - '80:8000'
+    volumes:
+      - ./animal_shelter:/app
+    command: python manage.py runserver 0.0.0.0:8000
