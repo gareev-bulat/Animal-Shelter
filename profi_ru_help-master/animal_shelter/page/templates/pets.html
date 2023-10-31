@@ -9,14 +9,14 @@
 <div class="container">
     <div class="row">
         {% for pet in pets %}
-        <div class="col-md-4">
-            <a href="{% url 'pet_detail' pet.pk %}">
-                <div class="card mb-4 box-shadow" style="height: 300px;">
+        <div class="col-md-4" style="padding-bottom: 20px;">
+            <a href="{% url 'pet_detail' pet.pk %}" style="text-decoration: none;">
+                <div class="shadow-lg" style="height: 500px;">
                     <img class="card-img-top" src="{{ pet.photo.url }}"
                         alt="{{ pet.name }}"
-                        style="height: 200px; object-fit: cover;">
+                        style="height: 400px; object-fit: cover;">
                     <div class="card-body">
-                        <h5 class="card-title">{{ pet.name }}</h5>
+                        <h5 class="card-title" style="color: black; font-size: 30px;">{{ pet.name }}</h5>
                     </div>
                 </div>
             </a>

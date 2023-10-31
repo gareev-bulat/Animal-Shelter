@@ -16,9 +16,6 @@ def volunteering(request):
     data = {"title": "Приют для собак 'Доброта' - Стань волонтёром"}
     return render(request, "volunteering.html", context=data)
 
-def contacts(request):
-    data = {"title": "Приют для собак 'Доброта' - Контакты"}
-    return render(request, "contacts.html", context=data)
 
 def pet_list(request):
     pets = Animal.objects.all()

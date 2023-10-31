@@ -58,9 +58,12 @@ footer {
 }
 
 
+
 .parent {
     transition: 3s;
 }
+
+
 
 .child {
     transition: 3s;
@@ -100,7 +103,7 @@ main{
 
 }
 
-@media (max-width: 561px) {
+@media (max-width: 561p) {
     .centered {
         color: rgb(0, 100, 240);
     }
