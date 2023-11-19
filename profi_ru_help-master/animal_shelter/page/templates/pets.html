@@ -6,15 +6,15 @@
         <header class="back_title mb-4"><h2>Выбери друга</h2></header>
     </div>
 </div>
-<div class="container">
+<section>
     <div class="row">
         {% for pet in pets %}
         <div class="col-md-4" style="padding-bottom: 20px;">
             <a href="{% url 'pet_detail' pet.pk %}" style="text-decoration: none;">
-                <div class="shadow-lg" style="height: 500px;">
+                <div class="shadow-lg" style="height: 600px;">
                     <img class="card-img-top" src="{{ pet.photo.url }}"
                         alt="{{ pet.name }}"
-                        style="height: 400px; object-fit: cover;">
+                        style="height: 500px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title" style="color: black; font-size: 30px;">{{ pet.name }}</h5>
                     </div>
@@ -26,5 +26,5 @@
         {% endif %}
         {% endfor %}
     </div>
-</div>
+</section>
 {% endblock %}
