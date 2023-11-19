@@ -132,16 +132,6 @@ main{
 
 }
 
-@media (max-width: 561p) {
-    .centered {
-        color: rgb(0, 100, 240);
-    }
-}
-@media (min-width: 562px){
-    .centered{
-        color: rgb(100, 100, 240);
-    }
-}
 
 
 
