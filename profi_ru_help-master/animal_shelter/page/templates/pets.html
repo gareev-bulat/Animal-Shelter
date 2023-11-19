@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<div class="row">
-    <div class="col-md-12">
-        <header class="back_title mb-4"><h2>Выбери друга</h2></header>
-    </div>
-</div>
-<section>
+
+<header class="back_title"><h2>Выбери друга</h2></header>
+
+
+
+<section style="padding: 40px;">
     <div class="row">
         {% for pet in pets %}
         <div class="col-md-4" style="padding-bottom: 20px;">
@@ -27,4 +27,5 @@
         {% endfor %}
     </div>
 </section>
+
 {% endblock %}
