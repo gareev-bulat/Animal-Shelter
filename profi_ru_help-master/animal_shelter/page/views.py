@@ -8,7 +8,7 @@ def index(request):
     return render(request, "index.html", context=data)
 
 def news(request):
-    news = NewsItem.objects.all()
+    news = NewsItem.objects.all()[::-1]
     data = {"title": "Приют для животных 'Дом надежды' - Новости", "news": news}
     return render(request, "news.html", context=data)
 
