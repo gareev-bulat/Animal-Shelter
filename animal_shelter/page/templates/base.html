@@ -24,31 +24,32 @@
         crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <img id="icon_image"
-                src="{% static 'images/icon.png' alt='logotip' align='right'%}"
-                style="border-radius: 30%">
-            <div class="topnav_buttons" style="margin-left: 5%;">
-                <a href="/">Главная</a>
-                <a href="/news">Новости</a>
-                <a href="/pets">Выбери друга</a>
-                <a href="/volunteering">Стань волонтёром</a>
-            </div>
-            <a id="switchMode" class="switch_button"
-                style="color:rgb(255, 255, 255);">Theme</a>
-        </nav>
-    </header>
-    <main>
-        {% block content %}{% endblock %}
-    </main>
+    <div class="content-wrapper">
+        <header>
+            <nav class="navbar">
+                <img id="icon_image"
+                    src="{% static 'images/icon.png' alt='logotip' align='right'%}"
+                    style="border-radius: 30%">
+                <div class="topnav_buttons" style="margin-left: 5%;">
+                    <a href="/">Главная</a>
+                    <a href="/news">Новости</a>
+                    <a href="/pets">Выбери друга</a>
+                    <a href="/volunteering">Стань волонтёром</a>
+                </div>
+                <a id="switchMode" class="switch_button"
+                    style="color:rgb(255, 255, 255);">Theme</a>
+            </nav>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+    <footer>
+        <div>2023-... ©Официальный сайт приюта для животных "Дом надежды"
+        </div>
+        <div style="font-size: 20px; font-weight: 400; padding-top:10px;">Разработчик Гареев Булат, волонтёр.</div>
+        <div style="font-weight: 400;">г. Уфа</div>
+        <div>Контакты: 89867094886</div>
+    </footer>
     <script src="{% static 'js/switcher.js' %}"></script>
 </body>
-<footer>
-    <div>2023-... ©Официальный сайт приюта для животных "Дом надежды"
-    </div>
-    <div style="font-size: 20px; font-weight: 400; padding-top:10px;">Разработчик Гареев Булат, волонтёр.</div>
-    <div style="font-weight: 400;">г. Уфа</div>
-    <div>Контакты: 89867094886</div>
-
-</footer>
