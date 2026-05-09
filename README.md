@@ -96,13 +96,3 @@ Welcome to the official repository of the **Animal Shelter "House of Hope"**! Th
 
 ---
 
-## 📞 Contact
-
-**Developer:** Bulat Gareev  
-**Email:** gareevbulich63@gmail.com 
-**Phone number** +1 215 252 0286
-**Country** United States
-**City:** Philadelphia
-
----
-
